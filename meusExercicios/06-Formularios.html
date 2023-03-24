@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <title>Exercício</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="./css/reset.css">
+		<link rel="stylesheet" type="text/css" href="./css/stylesheet1.css">
+
+  <style>
+
+  </style>
+</head> <!-- Este é o cabeçalho do documento HTML -->
+
+<body>
+  <header>
+    <!-- -->
+    <h2>Curso Front-End HTML</h2>
+  </header>
+  <section>
+    <nav>
+      <ul>
+        <li><a href="07-homepage.html">Home</a></li>
+        <li><a href="05-layouts.html">Artigo</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+    <article>
+      <h1>Contato</h1>
+      <p>Preencha os campos abaixo</p>
+
+      <form method="post"> <!--Utilizado em formulário (não usar método Get)-->
+        <div>
+          <label for="nome">Nome</label>
+          <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+        </div>
+        <div>
+          <label for="email">E-mail</label>
+          <input type="email" name="email" id="email" placeholder="Digite seu e-mail">
+        </div>
+        <div>
+          <label for="mensagem">Mensagem</label>
+          <textarea name="mensagem" id="mensagem" placeholder="Digite sua mensagem" rows="5" ></textarea>
+        </div>
+        <div>
+          <p>
+            <label>Quais linguagens você prefere?</label> <!--Termo Radio, marca apenas 1 opção-->
+            <input type="radio" name="linguagens" value="javascript"> JavaScript
+            <input type="radio" name="linguagens" value="html"> HTML
+            <input type="radio" name="linguagens" value="css"> CSS
+            <input type="radio" name="linguagens" value="java"> Java
+            <input type="radio" name="linguagens" value="c/c#"> C/C++
+            <input type="radio" name="linguagens" value="c#"> C#
+          </p>
+        </div>
+        <div>
+          <p>
+            <label>Quais linguagens você sabe?</label> <!--Termo checkbox, marca varias opções-->
+            <input type="checkbox" name="linguagens" value="javascript"> JavaScript
+            <input type="checkbox" name="linguagens" value="html"> HTML
+            <input type="checkbox" name="linguagens" value="css"> CSS
+            <input type="checkbox" name="linguagens" value="java"> Java
+            <input type="checkbox" name="linguagens" value="c/c#"> C/C++
+            <input type="checkbox" name="linguagens" value="c#"> C#
+          </p>
+        </div>
+        <div>
+          <label>Qual sua cor favorita?</label>
+          <select>
+            <option value="verde" selected>Verde</option> <!--selected, utilizado para deixar 1 opção selecionada-->
+            <option value="azul"> Azul</option>
+            <option value="amarelo"> Amarelo</option>
+          </select>
+        </div>
+        <div>
+          <input type="submit">
+        </div>
+
+
+
+
+      </form>
+
+    </article>
+  </section>
+  <footer>
+    <p>Desenvolvido por Klaus Schumacker</p>
+  </footer>
+</body>
+
+</html>
+
+<!--Aula 05 - Minuto 24:26-->

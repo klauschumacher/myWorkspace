@@ -1,0 +1,118 @@
+/* Importando CSS de Tabelas */
+@import 'tabelas.css';
+
+/*
+	Herança
+
+	1. Sobreposição / Sobrescrever
+	2. Aplica o último estilo definido
+	3. Prioriza estilo específicos (com seletores mais próximos)
+
+*/
+
+html {
+	font-family: sans-serif;
+	color: #454545;
+}
+
+header p {
+	color: #8b8b8b;
+	font-size: 1.8rem;
+}
+
+p {
+	color: #454545;
+}
+
+
+/*
+
+Combinadores
+- seletor descendente (espaço)
+> Filha
++ Irmã (adjacente) vem logo na sequência
+~ Irmã (geral) após elemento de referência
+
+*/
+
+header h2 {
+	font-weight: 100;
+	color:#ffffff;
+	font-weight: 500;
+}
+
+header > h2 {
+	font-weight: 600;
+	color: yellow;
+}
+
+h2 ~ h5 {
+	font-size: 1.7rem;
+	color:burlywood;
+}
+
+h2 + p {
+	text-transform: uppercase;
+	color:burlywood;
+}
+
+/* Pseudo-elementos */
+
+a {
+	color: #555555;
+	text-decoration: none;
+}
+
+a:visited {
+	background: #5b5a5a;
+}
+
+a:hover {
+	color: black;
+	background-color: #48474751;
+}
+
+a:active {
+	color: burlywood;
+}
+
+/* Tipografia */
+
+li {
+	letter-spacing: 0.02rem;
+	line-height: 1.2;
+	font-family: sans-serif;
+}
+
+h3 {
+	font: bold 1.2rem/2 sans-serif;
+	color: #454545; 	
+}
+
+/* Cores */
+
+body {
+	background: url(../img/wallpaperAnime.jpg) center top no-repeat whitesmoke;
+}
+
+section {
+	background: transparent;
+}
+
+header, footer {
+	background-color: #454545b0;
+}
+footer p {
+	color: #ffffff;
+	font-style: bold;
+	font-size: 1.5rem;
+}
+
+.navegacao {
+	background: transparent;
+}
+
+.navegacao li a {
+	color:#454545;
+	font-size: 1.0rem;
+}
